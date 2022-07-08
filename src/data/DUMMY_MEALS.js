@@ -1,3 +1,21 @@
+// Meal for 4 image
+import m01 from "../asssets/m01.jpg";
+import m02 from "../asssets/m02.jpg";
+import m03 from "../asssets/m03.jpg";
+import m04 from "../asssets/m04.jpg";
+import m05 from "../asssets/m05.jpg";
+import m06 from "../asssets/m06.jpg";
+
+// Beverages Image
+import bv01 from "../asssets/bv01.jpg";
+import bv02 from "../asssets/bv02.webp";
+import bv03 from "../asssets/bv03.webp";
+import bv04 from "../asssets/bv04.jpg";
+import bv05 from "../asssets/bv05.jpg";
+import bv06 from "../asssets/bv06.jpg";
+
+// Dessert Image
+
 export const DUMMY_MEALS = [
   // Meal for 4
 
@@ -9,9 +27,10 @@ export const DUMMY_MEALS = [
     price: 1090,
     type: "meal-for-4",
     recommended: true,
-    newLaunch: false,
+    newLaunch: true,
     bookmark: false,
     veg: true,
+    img: m01,
   },
 
   {
@@ -21,9 +40,10 @@ export const DUMMY_MEALS = [
     price: 1051,
     type: "meal-for-4",
     recommended: true,
-    newLaunch: false,
+    newLaunch: true,
     bookmark: false,
     veg: false,
+    img: m02,
   },
 
   {
@@ -33,9 +53,10 @@ export const DUMMY_MEALS = [
     price: 1050,
     type: "meal-for-4",
     recommended: false,
-    newLaunch: false,
+    newLaunch: true,
     bookmark: false,
     veg: true,
+    img: m03,
   },
 
   {
@@ -45,9 +66,10 @@ export const DUMMY_MEALS = [
     price: 1210,
     type: "meal-for-4",
     recommended: false,
-    newLaunch: false,
+    newLaunch: true,
     bookmark: false,
     veg: false,
+    img: m04,
   },
 
   {
@@ -57,9 +79,10 @@ export const DUMMY_MEALS = [
     price: 451,
     type: "meal-for-4",
     recommended: true,
-    newLaunch: false,
+    newLaunch: true,
     bookmark: false,
     veg: true,
+    img: m05,
   },
 
   {
@@ -69,10 +92,11 @@ export const DUMMY_MEALS = [
     name: "Meal for 4: Non-Veg Pizza Mania Party Combo",
     price: 516,
     type: "meal-for-4",
-    recommended: false,
+    recommended: true,
     newLaunch: false,
     bookmark: false,
     veg: false,
+    img: m06,
   },
 
   // Veg Pizza
@@ -92,6 +116,31 @@ export const DUMMY_MEALS = [
 
   {
     id: "vp02",
+    description: "Classic delight with 100% real mozzarella cheese",
+    name: "Margherita",
+    price: 239,
+    type: "veg-pizza",
+    recommended: true,
+    newLaunch: false,
+    bookmark: false,
+    veg: true,
+  },
+
+  {
+    id: "vp03",
+    description:
+      "A classic delight loaded with extra 100% real mozzarella cheese",
+    name: "Double Cheese Margherita",
+    price: 379,
+    type: "veg-pizza",
+    recommended: false,
+    newLaunch: false,
+    bookmark: false,
+    veg: true,
+  },
+
+  {
+    id: "vp04",
     description:
       "A crazy fusion like never before. A delicious fusion of corn stuffed paratha and cheesy pizza.",
     name: "Corn n Cheese Paratha Pizza",
@@ -104,7 +153,7 @@ export const DUMMY_MEALS = [
   },
 
   {
-    id: "vp03",
+    id: "vp05",
     description:
       "An epic fusion of paratha and pizza with melting cheese & soft paneer fillings to satisfy all your indulgent",
     name: "Paneer Paratha Pizza",
@@ -112,31 +161,6 @@ export const DUMMY_MEALS = [
     type: "paratha-pizza",
     recommended: true,
     newLaunch: true,
-    bookmark: false,
-    veg: true,
-  },
-
-  {
-    id: "vp04",
-    description: "Classic delight with 100% real mozzarella cheese",
-    name: "Margherita",
-    price: 239,
-    type: "veg-pizza",
-    recommended: true,
-    newLaunch: false,
-    bookmark: false,
-    veg: true,
-  },
-
-  {
-    id: "vp05",
-    description:
-      "A classic delight loaded with extra 100% real mozzarella cheese",
-    name: "Double Cheese Margherita",
-    price: 379,
-    type: "veg-pizza",
-    recommended: false,
-    newLaunch: false,
     bookmark: false,
     veg: true,
   },
@@ -424,6 +448,7 @@ export const DUMMY_MEALS = [
     newLaunch: false,
     bookmark: false,
     veg: true,
+    img: bv01,
   },
 
   {
@@ -436,6 +461,7 @@ export const DUMMY_MEALS = [
     newLaunch: false,
     bookmark: false,
     veg: true,
+    img: bv02,
   },
 
   {
@@ -448,6 +474,7 @@ export const DUMMY_MEALS = [
     newLaunch: false,
     bookmark: false,
     veg: true,
+    img: bv03,
   },
 
   {
@@ -460,6 +487,7 @@ export const DUMMY_MEALS = [
     newLaunch: false,
     bookmark: false,
     veg: true,
+    img: bv04,
   },
 
   {
@@ -472,6 +500,7 @@ export const DUMMY_MEALS = [
     newLaunch: false,
     bookmark: false,
     veg: true,
+    img: bv05,
   },
 
   {
@@ -484,6 +513,7 @@ export const DUMMY_MEALS = [
     newLaunch: false,
     bookmark: false,
     veg: true,
+    img: bv06,
   },
 
   // Dessert
