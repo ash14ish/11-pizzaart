@@ -60,7 +60,7 @@
   }
 
   .actions-container {
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 3.8fr 1fr;
   }
 
   .item-amount {
