@@ -23,10 +23,13 @@ import dsrt04 from "../asssets/dsrt04.jpg";
 
 // Paratha-pizza
 
-import vp04 from "../asssets/vp04.jpg";
-import vp05 from "../asssets/vp05.jpg";
+import vp06 from "../asssets/vp06.jpg";
+import vp07 from "../asssets/vp07.jpg";
 import nvp01 from "../asssets/nvp01.jpg";
 
+// Veg Pizza
+
+// Non Veg Pizza
 export const DUMMY_MEALS = [
   // Meal for 4
 
@@ -37,7 +40,7 @@ export const DUMMY_MEALS = [
     name: "Meal for 4: Indi Tandoori Paneer & Peppy Paneer Combo",
     price: 1090,
     type: "meal-for-4",
-    recommended: true,
+    recommended: false,
     newLaunch: true,
     bookmark: false,
     veg: true,
@@ -50,7 +53,7 @@ export const DUMMY_MEALS = [
     name: "Meal for 4: Chicken Dominator Combo",
     price: 1051,
     type: "meal-for-4",
-    recommended: true,
+    recommended: false,
     newLaunch: true,
     bookmark: false,
     veg: false,
@@ -103,7 +106,7 @@ export const DUMMY_MEALS = [
     name: "Meal for 4: Non-Veg Pizza Mania Party Combo",
     price: 516,
     type: "meal-for-4",
-    recommended: true,
+    recommended: false,
     newLaunch: true,
     bookmark: false,
     veg: false,
@@ -153,34 +156,6 @@ export const DUMMY_MEALS = [
   {
     id: "vp04",
     description:
-      "A crazy fusion like never before. A delicious fusion of corn stuffed paratha and cheesy pizza.",
-    name: "Corn n Cheese Paratha Pizza",
-    price: 179,
-    type: "paratha-pizza",
-    recommended: true,
-    newLaunch: true,
-    bookmark: false,
-    veg: true,
-    img: vp04,
-  },
-
-  {
-    id: "vp05",
-    description:
-      "An epic fusion of paratha and pizza with melting cheese & soft paneer fillings to satisfy all your indulgent",
-    name: "Paneer Paratha Pizza",
-    price: 209,
-    type: "paratha-pizza",
-    recommended: true,
-    newLaunch: true,
-    bookmark: false,
-    veg: true,
-    img: vp05,
-  },
-
-  {
-    id: "vp06",
-    description:
       "Delightful combination of onion, capsicum, tomato & grilled mushroom",
     name: "Farmhouse",
     price: 459,
@@ -192,7 +167,7 @@ export const DUMMY_MEALS = [
   },
 
   {
-    id: "vp07",
+    id: "vp05",
     description:
       "Mexican herbs sprinkled on onion, capsicum, tomato & jalapeno",
     name: "Mexican Green Wave",
@@ -202,6 +177,34 @@ export const DUMMY_MEALS = [
     newLaunch: true,
     bookmark: false,
     veg: true,
+  },
+
+  {
+    id: "vp06",
+    description:
+      "A crazy fusion like never before. A delicious fusion of corn stuffed paratha and cheesy pizza.",
+    name: "Corn n Cheese Paratha Pizza",
+    price: 179,
+    type: "paratha-pizza",
+    recommended: true,
+    newLaunch: true,
+    bookmark: false,
+    veg: true,
+    img: vp06,
+  },
+
+  {
+    id: "vp07",
+    description:
+      "An epic fusion of paratha and pizza with melting cheese & soft paneer fillings to satisfy all your indulgent",
+    name: "Paneer Paratha Pizza",
+    price: 209,
+    type: "paratha-pizza",
+    recommended: true,
+    newLaunch: true,
+    bookmark: false,
+    veg: true,
+    img: vp07,
   },
 
   {
