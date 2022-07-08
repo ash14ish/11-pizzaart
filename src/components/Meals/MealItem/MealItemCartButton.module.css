@@ -22,6 +22,34 @@
   bottom: 0.6rem;
 }
 
+.actions-container {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 2.5fr 1fr;
+  bottom: 0.6rem;
+  padding: 0 0.4rem;
+  cursor: pointer;
+  align-items: center;
+  justify-items: center;
+  border: 1px solid rgb(159, 159, 159);
+  border-radius: 4px;
+}
+
+.icons {
+  color: rgb(98, 98, 98);
+}
+
+.item-amount {
+  border: 1px solid rgb(159, 159, 159);
+  border-top: none;
+  border-bottom: none;
+  justify-self: stretch;
+  text-align: center;
+  margin: 0 0.2rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
 @media (max-width: 600px) {
   .actions-button {
     font-size: 0.8rem;

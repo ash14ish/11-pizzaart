@@ -2,7 +2,7 @@ import classes from "./MealItemCartButton.module.css";
 import React from "react";
 import { useSelector } from "react-redux";
 
-import { BiPlus, BiMinus } from "react-icons/bi";
+import { TiPlus, TiMinus } from "react-icons/ti";
 import { RiDeleteBinLine } from "react-icons/ri";
 
 const MealItemCartButton = props => {
@@ -21,7 +21,7 @@ const MealItemCartButton = props => {
       {updatedItem && (
         <div className={classes["actions-container"]}>
           {updatedItem.amount !== 1 ? (
-            <BiMinus className={classes.icons} onClick={props.onRemove} />
+            <TiMinus className={classes.icons} onClick={props.onRemove} />
           ) : (
             <RiDeleteBinLine
               className={classes.icons}
@@ -29,8 +29,8 @@ const MealItemCartButton = props => {
             />
           )}
 
-          <span className={classes.amount}>{updatedItem.amount}</span>
-          <BiPlus className={classes.icons} onClick={props.onAdd} />
+          <span className={classes["item-amount"]}>{updatedItem.amount}</span>
+          <TiPlus className={classes.icons} onClick={props.onAdd} />
         </div>
       )}
     </div>
