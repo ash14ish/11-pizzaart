@@ -51,8 +51,16 @@
 }
 
 @media (max-width: 600px) {
+  .actions {
+    margin-top: 2.6rem;
+  }
+
   .actions-button {
-    font-size: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .actions-container {
+    grid-template-columns: 1fr 4fr 1fr;
   }
 
   .item-amount {
