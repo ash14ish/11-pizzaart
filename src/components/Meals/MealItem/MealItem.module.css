@@ -32,6 +32,23 @@
   border-radius: 12px;
 }
 
+.bookmark {
+  position: absolute;
+  top: 0.4rem;
+  right: 1rem;
+  font-size: 1.7rem;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.bookmark-fill {
+  color: rgb(236, 8, 8);
+}
+
+.bookmark-outline {
+  color: white;
+}
+
 .meal img {
   object-fit: contain;
   width: 100%;

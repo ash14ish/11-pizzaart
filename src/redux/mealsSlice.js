@@ -5,8 +5,9 @@ const mealsSlice = createSlice({
   name: "meals",
   initialState: DUMMY_MEALS,
   reducers: {
-    bookmarkStatus(state) {
-      state.bookmark = !state.bookmark;
+    bookmarkStatus(state, action) {
+      const clickedItem = state.find(item => item.id === action.payload);
+      clickedItem.bookmark = !clickedItem.bookmark;
     },
   },
 });
