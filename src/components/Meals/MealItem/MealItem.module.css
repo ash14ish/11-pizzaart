@@ -3,7 +3,6 @@
   justify-content: start;
   margin: 1.2rem;
   padding-bottom: 1rem;
-  border: 1px solid rgb(255, 255, 255);
   background-color: rgb(255, 255, 255);
   border-radius: 6px;
   box-shadow: 2px 2px 9px black;
@@ -12,6 +11,13 @@
 .meal h4 {
   margin: 0;
   padding: 0 0.6rem;
+}
+
+.meal img {
+  object-fit: contain;
+  width: 100%;
+  padding: 0;
+  border-radius: 6px 6px 0 0;
 }
 
 .description {
@@ -23,6 +29,7 @@
 
 .price {
   margin-bottom: 0.25rem;
+  padding: 0 0.6rem;
   font-weight: bold;
   color: #ad5502;
   font-size: 1.25rem;
