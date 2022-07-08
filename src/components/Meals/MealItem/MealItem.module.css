@@ -37,6 +37,7 @@
 @media (max-width: 600px) {
   .meal {
     margin: 0.4rem;
+    box-shadow: 2px 2px 5px black;
   }
 
   .meal .price {

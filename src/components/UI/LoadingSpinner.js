@@ -1,9 +1,9 @@
 import React from "react";
 import classes from "./LoadingSpinner.module.css";
-import { IoMdPizza } from "react-icons/io";
+import { GiFullPizza } from "react-icons/gi";
 
 const LoadingSpinner = () => {
-  return <IoMdPizza className={classes.spinner} />;
+  return <GiFullPizza className={classes.spinner} />;
 };
 
 export default LoadingSpinner;
