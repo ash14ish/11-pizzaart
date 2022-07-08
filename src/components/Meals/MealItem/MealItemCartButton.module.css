@@ -54,4 +54,8 @@
   .actions-button {
     font-size: 0.8rem;
   }
+
+  .item-amount {
+    font-size: 1rem;
+  }
 }
