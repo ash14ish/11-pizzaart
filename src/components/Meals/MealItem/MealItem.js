@@ -1,21 +1,23 @@
 import classes from "./MealItem.module.css";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { cartActions } from "../../../redux/cartSlice";
+
+import { BiCheckboxSquare } from "react-icons/bi";
 import MealItemForm from "./MealItemForm";
 import React from "react";
 
 const MealItem = props => {
-  const price = `₹${props.price.toFixed(2)}`;
+  const price = `₹${props.meal.price.toFixed(2)}`;
 
   const dispatch = useDispatch();
 
   const addToCartHandler = amount => {
     dispatch(
       cartActions.addItem({
-        id: props.id,
-        name: props.name,
+        id: props.meal.id,
+        name: props.meal.name,
         amount,
-        price: props.price,
+        price: props.meal.price,
       })
     );
   };
@@ -23,10 +25,19 @@ const MealItem = props => {
   return (
     <li className={classes.meal}>
       <div>
-        <img src={props.img} />
-        <div className={classes.price}>{price}</div>
-        <h4>{props.name}</h4>
-        <p className={classes.description}>{props.description}</p>
+        <img src={props.meal.img} />
+
+        <div
+          className={
+            props.meal.veg ? classes["veg-icon"] : classes["non-veg-icon"]
+          }
+        >
+          <span>{price}</span>
+          <BiCheckboxSquare className={classes["foot-habit-icon"]} />
+        </div>
+
+        <h4>{props.meal.name}</h4>
+        <p className={classes.description}>{props.meal.description}</p>
       </div>
     </li>
   );

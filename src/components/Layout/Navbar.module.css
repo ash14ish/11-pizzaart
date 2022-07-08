@@ -16,6 +16,7 @@
   overflow: auto;
   white-space: wrap;
   margin: auto 0;
+  z-index: 10;
 }
 
 .nav-bar ul {

@@ -3,14 +3,7 @@ import MealItem from "./MealItem/MealItem";
 
 const AvailableMeals = props => {
   const mealsList = props.meals.map(meal => (
-    <MealItem
-      id={meal.id}
-      key={meal.id}
-      name={meal.name}
-      description={meal.description}
-      price={meal.price}
-      img={meal.img}
-    />
+    <MealItem meal={meal} key={meal.id} />
   ));
 
   return (
