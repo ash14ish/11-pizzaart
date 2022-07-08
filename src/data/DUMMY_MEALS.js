@@ -16,6 +16,17 @@ import bv06 from "../asssets/bv06.jpg";
 
 // Dessert Image
 
+import dsrt01 from "../asssets/dsrt01.webp";
+import dsrt02 from "../asssets/dsrt02.webp";
+import dsrt03 from "../asssets/dsrt03.webp";
+import dsrt04 from "../asssets/dsrt04.jpg";
+
+// Paratha-pizza
+
+import vp04 from "../asssets/vp04.jpg";
+import vp05 from "../asssets/vp05.jpg";
+import nvp01 from "../asssets/nvp01.jpg";
+
 export const DUMMY_MEALS = [
   // Meal for 4
 
@@ -93,7 +104,7 @@ export const DUMMY_MEALS = [
     price: 516,
     type: "meal-for-4",
     recommended: true,
-    newLaunch: false,
+    newLaunch: true,
     bookmark: false,
     veg: false,
     img: m06,
@@ -150,6 +161,7 @@ export const DUMMY_MEALS = [
     newLaunch: true,
     bookmark: false,
     veg: true,
+    img: vp04,
   },
 
   {
@@ -163,6 +175,7 @@ export const DUMMY_MEALS = [
     newLaunch: true,
     bookmark: false,
     veg: true,
+    img: vp05,
   },
 
   {
@@ -294,6 +307,7 @@ export const DUMMY_MEALS = [
     newLaunch: true,
     bookmark: false,
     veg: false,
+    img: nvp01,
   },
 
   {
@@ -529,6 +543,7 @@ export const DUMMY_MEALS = [
     newLaunch: false,
     bookmark: false,
     veg: true,
+    img: dsrt01,
   },
 
   {
@@ -541,6 +556,7 @@ export const DUMMY_MEALS = [
     newLaunch: false,
     bookmark: false,
     veg: true,
+    img: dsrt02,
   },
 
   {
@@ -554,6 +570,7 @@ export const DUMMY_MEALS = [
     newLaunch: false,
     bookmark: false,
     veg: true,
+    img: dsrt03,
   },
 
   {
@@ -563,9 +580,10 @@ export const DUMMY_MEALS = [
     name: "Red Velvet Lava Cake",
     price: 139,
     type: "dessert",
-    recommended: false,
-    newLaunch: true,
+    recommended: true,
+    newLaunch: false,
     bookmark: false,
     veg: true,
+    img: dsrt04,
   },
 ];
