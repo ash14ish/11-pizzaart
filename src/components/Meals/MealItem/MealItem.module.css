@@ -21,7 +21,7 @@
   font-size: 1.25rem;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .meal .description {
     font-size: 0.8rem;
   }
