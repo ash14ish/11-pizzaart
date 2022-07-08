@@ -27,9 +27,35 @@ import vp06 from "../asssets/vp06.jpg";
 import vp07 from "../asssets/vp07.jpg";
 import nvp01 from "../asssets/nvp01.jpg";
 
+// Non Veg Pizza
+
+import nvp02 from "../asssets/nvp02.webp";
+import nvp03 from "../asssets/nvp03.jpg";
+import nvp04 from "../asssets/nvp04.jpg";
+import nvp05 from "../asssets/nvp05.jpg";
+import nvp06 from "../asssets/nvp06.webp";
+import nvp07 from "../asssets/nvp07.webp";
+import nvp08 from "../asssets/nvp08.webp";
+import nvp09 from "../asssets/nvp09.webp";
+import nvp10 from "../asssets/nvp10.webp";
+import nvp11 from "../asssets/nvp11.webp";
+import nvp12 from "../asssets/nvp12.webp";
+
 // Veg Pizza
 
-// Non Veg Pizza
+import vp01 from "../asssets/vp01.jpg";
+import vp02 from "../asssets/vp02.webp";
+import vp03 from "../asssets/vp02.webp";
+import vp04 from "../asssets/vp04.webp";
+import vp05 from "../asssets/vp05.webp";
+import vp08 from "../asssets/vp01.jpg";
+import vp09 from "../asssets/vp01.jpg";
+import vp10 from "../asssets/vp01.jpg";
+import vp11 from "../asssets/vp01.jpg";
+import vp12 from "../asssets/vp01.jpg";
+import vp13 from "../asssets/vp01.jpg";
+import vp14 from "../asssets/vp01.jpg";
+
 export const DUMMY_MEALS = [
   // Meal for 4
 
@@ -123,9 +149,10 @@ export const DUMMY_MEALS = [
     price: 459,
     type: "veg-pizza",
     recommended: false,
-    newLaunch: false,
+    newLaunch: true,
     bookmark: false,
     veg: true,
+    img: vp01,
   },
 
   {
@@ -138,6 +165,7 @@ export const DUMMY_MEALS = [
     newLaunch: false,
     bookmark: false,
     veg: true,
+    img: vp02,
   },
 
   {
@@ -151,6 +179,7 @@ export const DUMMY_MEALS = [
     newLaunch: false,
     bookmark: false,
     veg: true,
+    img: vp03,
   },
 
   {
@@ -164,6 +193,7 @@ export const DUMMY_MEALS = [
     newLaunch: false,
     bookmark: false,
     veg: true,
+    img: vp04,
   },
 
   {
@@ -174,9 +204,10 @@ export const DUMMY_MEALS = [
     price: 459,
     type: "veg-pizza",
     recommended: false,
-    newLaunch: true,
+    newLaunch: false,
     bookmark: false,
     veg: true,
+    img: vp05,
   },
 
   {
@@ -218,6 +249,7 @@ export const DUMMY_MEALS = [
     newLaunch: false,
     bookmark: false,
     veg: true,
+    img: vp08,
   },
 
   {
@@ -231,6 +263,7 @@ export const DUMMY_MEALS = [
     newLaunch: false,
     bookmark: false,
     veg: true,
+    img: vp09,
   },
 
   {
@@ -244,6 +277,7 @@ export const DUMMY_MEALS = [
     newLaunch: false,
     bookmark: false,
     veg: true,
+    img: vp10,
   },
 
   {
@@ -257,6 +291,7 @@ export const DUMMY_MEALS = [
     newLaunch: false,
     bookmark: false,
     veg: true,
+    img: vp11,
   },
 
   {
@@ -269,6 +304,7 @@ export const DUMMY_MEALS = [
     newLaunch: false,
     bookmark: false,
     veg: true,
+    img: vp12,
   },
 
   {
@@ -282,6 +318,7 @@ export const DUMMY_MEALS = [
     newLaunch: false,
     bookmark: false,
     veg: true,
+    img: vp13,
   },
 
   {
@@ -295,6 +332,7 @@ export const DUMMY_MEALS = [
     newLaunch: true,
     bookmark: false,
     veg: true,
+    img: vp14,
   },
 
   // Non-Veg Pizza
@@ -321,9 +359,10 @@ export const DUMMY_MEALS = [
     price: 599,
     type: "non-veg-pizza",
     recommended: true,
-    newLaunch: true,
+    newLaunch: false,
     bookmark: false,
     veg: false,
+    img: nvp02,
   },
 
   {
@@ -337,6 +376,7 @@ export const DUMMY_MEALS = [
     newLaunch: true,
     bookmark: false,
     veg: false,
+    img: nvp03,
   },
 
   {
@@ -350,6 +390,7 @@ export const DUMMY_MEALS = [
     newLaunch: true,
     bookmark: false,
     veg: false,
+    img: nvp04,
   },
 
   {
@@ -363,6 +404,7 @@ export const DUMMY_MEALS = [
     newLaunch: true,
     bookmark: false,
     veg: false,
+    img: nvp05,
   },
 
   {
@@ -376,6 +418,7 @@ export const DUMMY_MEALS = [
     newLaunch: false,
     bookmark: false,
     veg: false,
+    img: nvp06,
   },
 
   {
@@ -389,6 +432,7 @@ export const DUMMY_MEALS = [
     newLaunch: false,
     bookmark: false,
     veg: false,
+    img: nvp07,
   },
 
   {
@@ -402,6 +446,7 @@ export const DUMMY_MEALS = [
     newLaunch: false,
     bookmark: false,
     veg: false,
+    img: nvp08,
   },
 
   {
@@ -414,6 +459,7 @@ export const DUMMY_MEALS = [
     newLaunch: false,
     bookmark: false,
     veg: false,
+    img: nvp09,
   },
 
   {
@@ -426,6 +472,7 @@ export const DUMMY_MEALS = [
     newLaunch: false,
     bookmark: false,
     veg: false,
+    img: nvp10,
   },
 
   {
@@ -438,6 +485,7 @@ export const DUMMY_MEALS = [
     newLaunch: false,
     bookmark: false,
     veg: false,
+    img: nvp11,
   },
 
   {
@@ -448,9 +496,10 @@ export const DUMMY_MEALS = [
     price: 629,
     type: "non-veg-pizza",
     recommended: false,
-    newLaunch: true,
+    newLaunch: false,
     bookmark: false,
     veg: false,
+    img: nvp12,
   },
 
   // Beverages
