@@ -1,0 +1,100 @@
+::-webkit-scrollbar {
+  height: 8px;
+}
+
+.nav-bar {
+  position: relative;
+  position: fixed;
+  top: 4rem;
+  left: 0;
+  width: 100%;
+  height: 3rem;
+  background-color: #0066a7;
+  padding: 0.6rem;
+  padding-left: 0;
+  color: white;
+  overflow: auto;
+  white-space: wrap;
+  margin: auto 0;
+  z-index: 10;
+}
+
+.nav-bar ul {
+  position: absolute;
+  list-style-type: none;
+  align-items: flex-start;
+  display: flex;
+  margin: auto;
+  left: 0;
+  bottom: 0;
+}
+
+.nav-bar li {
+  font-size: 1rem;
+  margin: auto 0;
+}
+
+.nav-bar a {
+  display: flex;
+  text-decoration: none;
+  width: max-content;
+  padding: 0 0.6rem;
+  margin: 0 0 0 1.6rem;
+  color: rgba(255, 255, 255, 0.64);
+  padding-bottom: 0.5rem;
+}
+
+.nav-bar a.active {
+  border-bottom: 5.4px solid #11830f;
+  color: white;
+}
+
+.nav-bar ul li:first-child a {
+  margin-left: 0;
+}
+
+.nav-bar ul li:last-child a {
+  margin-right: 1rem;
+}
+
+@media (max-width: 500px) {
+  ::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .nav-bar {
+    top: 3rem;
+  }
+
+  .nav-bar ul {
+    padding-left: 0.3rem;
+  }
+
+  .nav-bar a {
+    padding: auto 0.5rem;
+    margin-left: 1.2rem;
+  }
+
+  .nav-bar ul li:last-child a {
+    margin-right: 0.5rem;
+  }
+}
+
+@media (max-width: 420px) {
+  ::-webkit-scrollbar {
+    height: 0;
+  }
+
+  .nav-bar {
+    top: 2.5rem;
+  }
+
+  .nav-bar li {
+    font-size: 0.9rem;
+  }
+
+  .nav-bar a {
+    padding: auto 0.42rem;
+    margin-left: 1rem;
+  }
+}

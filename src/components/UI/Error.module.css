@@ -1,0 +1,36 @@
+.error-container {
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 30vh;
+  align-items: center;
+}
+
+.error {
+  display: inline-block;
+  vertical-align: middle;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  animation: rotate 1400ms 7 linear;
+}
+
+.message {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+  color: rgb(194, 6, 44);
+  font-size: 20px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
