@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: flex-end;
   width: 7rem;
-  margin: 1rem 0.6rem 0 auto;
+  margin: 1rem 0.4rem 0 auto;
   gap: 1rem;
   justify-content: space-around;
 }
@@ -22,6 +22,6 @@
 
 @media (max-width: 600px) {
   .actions-button {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
