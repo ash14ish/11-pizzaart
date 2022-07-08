@@ -1,8 +1,9 @@
 import classes from "./MealItem.module.css";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { cartActions } from "../../../redux/cartSlice";
 
 import { BiCheckboxSquare } from "react-icons/bi";
+import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 import MealItemForm from "./MealItemForm";
 import React from "react";
 
@@ -25,7 +26,16 @@ const MealItem = props => {
   return (
     <li className={classes.meal}>
       <div>
-        <img src={props.meal.img} />
+        <div className={classes["img-container"]}>
+          <img src={props.meal.img} />
+
+          {props.meal.recommended && (
+            <div className={classes["recommended-badge"]}>Recommended</div>
+          )}
+
+          <AiOutlineHeart />
+          <AiFillHeart />
+        </div>
 
         <div
           className={

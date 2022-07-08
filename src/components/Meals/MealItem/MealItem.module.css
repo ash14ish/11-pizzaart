@@ -13,6 +13,25 @@
   padding: 0 0.6rem;
 }
 
+.img-container {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.recommended-badge {
+  position: absolute;
+  top: 0.4rem;
+  left: 1rem;
+  font-size: 0.7rem;
+  color: white;
+  width: max-content;
+  background-color: black;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid white;
+  border-radius: 12px;
+}
+
 .meal img {
   object-fit: contain;
   width: 100%;
