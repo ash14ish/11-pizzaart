@@ -52,7 +52,7 @@
 
 @media (max-width: 380px) {
   .meal h4 {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .meal .price {
