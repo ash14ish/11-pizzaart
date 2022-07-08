@@ -48,13 +48,15 @@ import vp02 from "../asssets/vp02.webp";
 import vp03 from "../asssets/vp02.webp";
 import vp04 from "../asssets/vp04.webp";
 import vp05 from "../asssets/vp05.webp";
-import vp08 from "../asssets/vp01.jpg";
-import vp09 from "../asssets/vp01.jpg";
-import vp10 from "../asssets/vp01.jpg";
-import vp11 from "../asssets/vp01.jpg";
-import vp12 from "../asssets/vp01.jpg";
-import vp13 from "../asssets/vp01.jpg";
-import vp14 from "../asssets/vp01.jpg";
+import vp08 from "../asssets/vp08.webp";
+import vp09 from "../asssets/vp09.webp";
+import vp10 from "../asssets/vp10.webp";
+import vp11 from "../asssets/vp11.webp";
+import vp12 from "../asssets/vp12.webp";
+import vp13 from "../asssets/vp13.webp";
+import vp14 from "../asssets/vp14.jpg";
+import vp15 from "../asssets/vp15.jpg";
+import vp16 from "../asssets/vp16.jpg";
 
 export const DUMMY_MEALS = [
   // Meal for 4
@@ -326,13 +328,41 @@ export const DUMMY_MEALS = [
     description:
       "Loaded with 1 Pound of Mozzarella and gooey Liquid Cheese on a Classic Large Pizza topped with a generous helping of herb sprinkle",
     name: "The Cheese Dominator",
-    price: 629,
+    price: 639,
     type: "veg-pizza",
     recommended: true,
     newLaunch: true,
     bookmark: false,
     veg: true,
     img: vp14,
+  },
+
+  {
+    id: "vp15",
+    description:
+      "Cheese Overloaded pizza with 4 different varieties of cheese and 4 times the cheese of a normal pizza,",
+    name: "The 4 Cheese Pizza",
+    price: 639,
+    type: "veg-pizza",
+    recommended: true,
+    newLaunch: true,
+    bookmark: false,
+    veg: true,
+    img: vp15,
+  },
+
+  {
+    id: "vp16",
+    description:
+      "Loaded with Plant Based Protein topping along with Black Olives & Red Paprika enjoy this unique 100% unthinkable pizza",
+    name: "The Unthinkable Pizza",
+    price: 549,
+    type: "veg-pizza",
+    recommended: true,
+    newLaunch: true,
+    bookmark: false,
+    veg: true,
+    img: vp16,
   },
 
   // Non-Veg Pizza
