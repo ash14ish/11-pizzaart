@@ -1,20 +1,40 @@
 .meals {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
   width: 90%;
   margin: 2rem auto;
 }
 
-.meals ul {
+.meals-list {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 992px) {
+  .meals {
+    width: 92%;
+  }
+
+  .meals-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
   body {
     margin: 6.5rem auto;
+  }
+
+  .meals {
+    width: 97%;
+  }
+
+  .meals-list {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 }
 
