@@ -3,9 +3,9 @@
   height: 6rem;
   position: relative;
   border-radius: 50%;
-  top: 50vh;
+  top: 40%;
   left: calc(45% - 2rem);
-  animation: rotate 6s 40 linear;
+  animation: rotate 3s 40 linear;
   color: #0066a7;
 }
 

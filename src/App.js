@@ -20,13 +20,13 @@ function App() {
 
   return (
     <Router>
-      {cartIsShown && <Cart onClose={hideCartHandler} />}
       <Header />
       <Navbar />
       <main>
         <Meals />
       </main>
       <CartButton onClick={showCartHandler} />
+      {cartIsShown && <Cart onClose={hideCartHandler} />}
     </Router>
   );
 }

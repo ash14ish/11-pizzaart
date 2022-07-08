@@ -7,6 +7,7 @@ import { cartActions } from "../../redux/cartSlice";
 import Modal from "../UI/Modal";
 import CartItem from "./CartItem";
 import Checkout from "./Checkout";
+import LoadingSpinner from "../UI/LoadingSpinner";
 import { BsCartXFill, BsBagCheck } from "react-icons/bs";
 
 const Cart = props => {
@@ -41,7 +42,7 @@ const Cart = props => {
     setTimeout(() => {
       setIsSubmitting(false);
       dispatch(cartActions.clearCart());
-    }, 2000);
+    }, 3000);
 
     setDidSubmit(true);
   };
