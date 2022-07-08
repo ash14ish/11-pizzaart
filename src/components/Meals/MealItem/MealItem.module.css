@@ -58,4 +58,8 @@
   .meal .price {
     font-size: 0.85rem;
   }
+
+  .description {
+    font-size: 0.6rem;
+  }
 }
