@@ -8,27 +8,23 @@ import { mealsActions } from "../../../redux/mealsSlice";
 import { BiCheckboxSquare } from "react-icons/bi";
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 
-import MealItemForm from "./MealItemForm";
+import MealItemCartButton from "./MealItemCartButton";
 
 const MealItem = props => {
   const price = `₹${props.meal.price.toFixed(2)}`;
 
   const dispatch = useDispatch();
-  const dispatchBookmark = useDispatch();
 
-  const bookmarkHandler = id => {
+  const bookmarkHandler = () => {
     dispatch(mealsActions.bookmarkStatus(props.meal.id));
   };
 
-  const addToCartHandler = amount => {
-    dispatch(
-      cartActions.addItem({
-        id: props.meal.id,
-        name: props.meal.name,
-        amount,
-        price: props.meal.price,
-      })
-    );
+  const cartItemRemoveHandler = id => {
+    dispatch(cartActions.removeItem(id));
+  };
+
+  const cartItemAddHandler = item => {
+    dispatch(cartActions.addItem({ ...item, amount: 1 }));
   };
 
   return (
@@ -65,6 +61,16 @@ const MealItem = props => {
 
         <h4>{props.meal.name}</h4>
         <p className={classes.description}>{props.meal.description}</p>
+
+        <MealItemCartButton
+          id={props.meal.id}
+          onRemove={() => {
+            cartItemRemoveHandler(props.meal.id);
+          }}
+          onAdd={() => {
+            cartItemAddHandler(props.meal);
+          }}
+        />
       </div>
     </li>
   );

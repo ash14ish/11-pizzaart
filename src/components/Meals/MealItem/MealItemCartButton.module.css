@@ -1,0 +1,21 @@
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 7rem;
+  margin: 1rem 0.6rem 0 auto;
+  gap: 1rem;
+  justify-content: space-around;
+}
+
+.actions-button {
+  background-color: #82bb37;
+  color: white;
+  outline: none;
+  font-size: 0.7rem;
+  font-weight: bold;
+  border: 0px;
+  padding: 0.4rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
