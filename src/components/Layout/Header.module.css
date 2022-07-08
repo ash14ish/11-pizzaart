@@ -13,6 +13,12 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
+.pizza-icon {
+  color: #f4dc2b;
+  transform: rotate(-70deg);
+  vertical-align: middle;
+}
+
 @media (max-width: 500px) {
   .header {
     padding: 0 1rem;
