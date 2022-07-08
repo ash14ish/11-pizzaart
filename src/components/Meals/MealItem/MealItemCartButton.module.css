@@ -16,6 +16,12 @@
   font-weight: bold;
   border: 0px;
   padding: 0.4rem;
-  border-radius: 5px;
+  border-radius: 4px;
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .actions-button {
+    font-size: 0.9rem;
+  }
 }
