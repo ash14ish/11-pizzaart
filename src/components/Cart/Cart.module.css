@@ -83,11 +83,10 @@
 
 .empty-cart {
   display: block;
-  width: 60px;
-  height: 60px;
-  color: var(--color-non-veg);
-  margin: auto;
-  margin-bottom: 1rem;
+  width: 45px;
+  height: 45px;
+  color: rgb(255, 142, 161);
+  margin: 1.5rem auto;
 }
 
 .submit-spinner {

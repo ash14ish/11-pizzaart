@@ -95,6 +95,10 @@ const Cart = props => {
 
       {!hasItems && (
         <>
+          <div className={`${classes.total} ${classes["grand-total"]}`}>
+            <span>Grand Total</span>
+            <span>₹ {grandTotal}</span>
+          </div>
           <BsCartXFill className={classes["empty-cart"]} />
           <div className={classes.message}>Cart is empty</div>
         </>
