@@ -27,6 +27,12 @@ function App() {
       </main>
       <CartButton onClick={showCartHandler} />
       {cartIsShown && <Cart onClose={hideCartHandler} />}
+      <footer>
+        &copy; Images via
+        <a href="https://pizzaonline.dominos.co.in/menu" target="_blank">
+          Domino's
+        </a>
+      </footer>
     </Router>
   );
 }

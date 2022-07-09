@@ -19,8 +19,19 @@ html {
 }
 
 body {
-  margin: 8rem auto;
+  margin: 5rem auto;
   background-color: #cecece;
+}
+
+footer {
+  width: max-content;
+  margin: 0 auto;
+  color: gray;
+}
+
+footer a {
+  color: gray;
+  margin-left: 0.3rem;
 }
 
 @keyframes bump {
