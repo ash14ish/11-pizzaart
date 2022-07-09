@@ -1,11 +1,23 @@
 .cart-item {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
   align-items: center;
   border-bottom: 2px solid var(--color-secondary);
-  padding: 0;
+  padding: 0.4rem 0;
   margin: 0;
-  padding-bottom: 0.4rem;
+  gap: 1rem;
+}
+
+.cart-item img {
+  width: 85%;
+  height: 85%;
+  aspect-ratio: 1/1;
+}
+
+.cart-item-description {
+  grid-template-columns: 1fr auto;
+  display: grid;
+  justify-content: center;
 }
 
 .cart-item h3 {
