@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { cartActions } from "./redux/cartSlice";
 import { BrowserRouter as Router } from "react-router-dom";
 
 import Header from "./components/Layout/Header";

@@ -29,7 +29,14 @@ const cartSlice = createSlice({
         });
       }
 
-      return { items: updatedItems, totalAmount: updatedTotalAmount };
+      const updatedState = {
+        items: updatedItems,
+        totalAmount: updatedTotalAmount,
+      };
+
+      localStorage.setItem("cart", updatedState);
+
+      return updatedState;
     },
 
     removeItem(state, action) {
@@ -55,11 +62,23 @@ const cartSlice = createSlice({
           } else return { ...item };
         });
       }
-      return { items: updatedItems, totalAmount: updatedTotalAmount };
+
+      const updatedState = {
+        items: updatedItems,
+        totalAmount: updatedTotalAmount,
+      };
+
+      localStorage.setItem("cart", updatedState);
+
+      return updatedState;
     },
 
     clearCart() {
       return initialCartState;
+    },
+
+    loadCart() {
+      return JSON.parse(localStorage.getItem("cart"));
     },
   },
 });
