@@ -5,9 +5,10 @@
   border-bottom: 2px solid var(--color-secondary);
   padding: 0;
   margin: 0;
+  padding-bottom: 0.4rem;
 }
 
-.cart-item h2 {
+.cart-item h3 {
   margin: 0 0 0.5rem 0;
   color: #363636;
 }
@@ -20,8 +21,9 @@
 }
 
 .price {
+  color: rgb(98, 98, 98);
   font-weight: bold;
-  color: var(--color-secondary);
+  font-size: 0.9rem;
 }
 
 .amount {
@@ -32,15 +34,31 @@
   color: #363636;
 }
 
-.actions {
-  display: flex;
-  flex-direction: column;
+.actions-container {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr 1fr;
+  bottom: 0.6rem;
+  padding: 0 0.4rem;
+  cursor: pointer;
+  align-items: center;
+  justify-items: center;
+  border: 1px solid rgb(159, 159, 159);
+  border-radius: 4px;
 }
 
-@media (min-width: 768px) {
-  .actions {
-    flex-direction: row;
-  }
+.icons {
+  color: rgb(98, 98, 98);
+}
+
+.item-amount {
+  border: 1px solid rgb(159, 159, 159);
+  border-top: none;
+  border-bottom: none;
+  justify-self: stretch;
+  text-align: center;
+  margin: 0 0.2rem;
+  font-size: 0.9rem;
+  font-weight: bold;
 }
 
 .cart-item button {
@@ -65,4 +83,11 @@
 }
 
 @media (max-width: 600px) {
+  .actions-container {
+    grid-template-columns: 1fr 3.8fr 1fr;
+  }
+
+  .item-amount {
+    font-size: 1.2rem;
+  }
 }
