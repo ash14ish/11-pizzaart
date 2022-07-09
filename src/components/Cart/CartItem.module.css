@@ -84,7 +84,7 @@
 
 @media (max-width: 600px) {
   .actions-container {
-    grid-template-columns: 1fr 3.8fr 1fr;
+    grid-template-columns: 1fr 2.3fr 1fr;
   }
 
   .item-amount {

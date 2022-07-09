@@ -102,7 +102,7 @@ const Cart = props => {
 
       {hasItems && (
         <>
-          <div className={classes.total}>
+          <div className={`${classes.total} ${classes["sub-total"]}`}>
             <span>Subtotal</span>
             <span>₹ {subTotal}</span>
           </div>

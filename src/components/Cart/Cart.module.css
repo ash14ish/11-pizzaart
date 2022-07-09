@@ -16,6 +16,10 @@
   margin: 0.5rem 0;
 }
 
+.sub-total {
+  margin-top: 1.3rem;
+}
+
 .grand-total {
   color: var(--color-secondary);
   font-size: 1.1rem;
@@ -85,3 +89,9 @@
   margin: auto;
   margin-bottom: 1rem;
 }
+
+/* @media (max-width: 600px) {
+  .sub-total {
+    margin-top: 1.1rem;
+  }
+} */
