@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { cartActions } from "./redux/cartSlice";
+import { useDispatch } from "react-redux";
 import { BrowserRouter as Router } from "react-router-dom";
 
 import Header from "./components/Layout/Header";
@@ -7,9 +7,15 @@ import Navbar from "./components/Layout/Navbar";
 import Meals from "./components/Meals/Meals";
 import Cart from "./components/Cart/Cart";
 import CartButton from "./components/Layout/CartButton";
+import { cartActions } from "./redux/cartSlice";
 
 function App() {
   const [cartIsShown, setCartIsShown] = useState(false);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(cartActions.loadCart());
+  }, []);
 
   const showCartHandler = () => {
     setCartIsShown(true);

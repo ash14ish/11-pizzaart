@@ -34,7 +34,7 @@ const cartSlice = createSlice({
         totalAmount: updatedTotalAmount,
       };
 
-      localStorage.setItem("cart", updatedState);
+      localStorage.setItem("cart", JSON.stringify(updatedState));
 
       return updatedState;
     },
@@ -68,17 +68,19 @@ const cartSlice = createSlice({
         totalAmount: updatedTotalAmount,
       };
 
-      localStorage.setItem("cart", updatedState);
+      localStorage.setItem("cart", JSON.stringify(updatedState));
 
       return updatedState;
     },
 
     clearCart() {
+      localStorage.removeItem("cart");
       return initialCartState;
     },
 
     loadCart() {
-      return JSON.parse(localStorage.getItem("cart"));
+      const cart = JSON.parse(localStorage.getItem("cart"));
+      if (cart) return cart;
     },
   },
 });
