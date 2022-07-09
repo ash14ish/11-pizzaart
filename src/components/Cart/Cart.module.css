@@ -10,9 +10,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 0.9rem;
+  color: rgb(98, 98, 98);
+  margin: 0.6rem 0;
+}
+
+.grand-total {
+  color: var(--color-secondary);
+  font-size: 1.1rem;
   font-weight: bold;
-  font-size: 1.5rem;
-  margin: 1rem 0;
 }
 
 .actions {
@@ -23,7 +29,7 @@
   font: inherit;
   cursor: pointer;
   background-color: transparent;
-  border: 1px solid #8a2b06;
+  border: 1px solid var(--color-secondary);
   padding: 0.5rem 2rem;
   border-radius: 25px;
   margin-left: 1rem;
@@ -31,17 +37,17 @@
 
 .actions button:hover,
 .actions button:active {
-  background-color: #5a1a01;
-  border-color: #5a1a01;
+  background-color: var(--color-secondary-dark);
+  border-color: var(--color-secondary-dark);
   color: white;
 }
 
 .actions .button--alt {
-  color: #8a2b06;
+  color: var(--color-secondary);
 }
 
 .actions .button {
-  background-color: #8a2b06;
+  background-color: var(--color-secondary);
   color: white;
 }
 
@@ -67,14 +73,14 @@
   margin-left: 10px;
   font-weight: bolder;
   font-size: 18px;
-  color: green;
+  color: var(--color-veg);
 }
 
 .empty-cart {
   display: block;
   width: 60px;
   height: 60px;
-  color: #dc2c2c;
+  color: var(--color-non-veg);
   margin: auto;
   margin-bottom: 1rem;
 }

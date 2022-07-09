@@ -9,13 +9,14 @@
 
 .control label {
   font-weight: bold;
+  color: var(--color-primary);
   margin-bottom: 0.25rem;
   display: block;
 }
 
 .control input {
   font: inherit;
-  border: 1px solid #ccc;
+  border: 1px solid var(--color-secondary);
   border-radius: 4px;
   width: 20rem;
   max-width: 100%;
@@ -29,7 +30,7 @@
 
 .actions button {
   font: inherit;
-  color: #5a1a01;
+  color: var(--color-secondary);
   cursor: pointer;
   background-color: transparent;
   border: none;
@@ -39,25 +40,32 @@
 
 .actions button:hover,
 .actions button:active {
-  background-color: #ffe6dc;
+  background-color: var(--color-secondary-dark);
+  color: white;
 }
 
 .actions .submit {
-  border: 1px solid #5a1a01;
-  background-color: #5a1a01;
+  border: 1px solid var(--color-secondary);
+  background-color: var(--color-secondary);
   color: white;
 }
 
 .actions .submit:hover,
 .actions .submit:active {
-  background-color: #7a2706;
+  background-color: var(--color-secondary-dark);
 }
 
 .invalid label {
-  color: #ca3e51;
+  color: var(--color-non-veg);
 }
 
 .invalid input {
-  border-color: #aa0b20;
-  background-color: #ffeff1;
+  border-color: var(--color-non-veg);
+  background-color: #ffdfe3;
+}
+
+.form p {
+  margin-top: 0.4rem;
+  font-size: 0.85rem;
+  color: rgb(100, 100, 100);
 }

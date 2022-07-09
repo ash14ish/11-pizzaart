@@ -19,7 +19,9 @@ const Cart = props => {
 
   const dispatch = useDispatch();
 
-  const totalAmount = `₹${+cart.totalAmount.toFixed(2)}`;
+  const subTotal = `${(+cart.totalAmount).toFixed(2)}`;
+  const taxes = `${(+subTotal * 0.05).toFixed(2)}`;
+  const grandTotal = `${(+(+subTotal + +taxes)).toFixed(2)}`;
 
   const hasItems = cart.items.length > 0;
 
@@ -56,6 +58,8 @@ const Cart = props => {
             name={item.name}
             amount={item.amount}
             price={item.price}
+            image={item.img}
+            veg={item.veg}
             onRemove={() => {
               cartItemRemoveHandler(item.id);
             }}
@@ -88,19 +92,37 @@ const Cart = props => {
   const cartModalContent = (
     <>
       {cartItems}
-      <div className={classes.total}>
-        <span>Total Amount</span>
-        <span>{totalAmount}</span>
-      </div>
+
       {!hasItems && (
         <>
           <BsCartXFill className={classes["empty-cart"]} />
           <div className={classes.message}>Cart is empty</div>
         </>
       )}
+
+      {hasItems && (
+        <>
+          <div className={classes.total}>
+            <span>Subtotal</span>
+            <span>₹ {subTotal}</span>
+          </div>
+
+          <div className={classes.total}>
+            <span>Taxes and Charges</span>
+            <span>₹ {taxes}</span>
+          </div>
+
+          <div className={`${classes.total} ${classes["grand-total"]}`}>
+            <span>Grand Total</span>
+            <span>₹ {grandTotal}</span>
+          </div>
+        </>
+      )}
+
       {isCheckout && (
         <Checkout onOrder={userDataHandler} onCancel={orderHandler} />
       )}
+
       {!isCheckout && modalActions}
     </>
   );

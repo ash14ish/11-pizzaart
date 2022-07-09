@@ -2,9 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #8a2b06;
-  padding: 1rem 0;
-  margin: 1rem 0;
+  border-bottom: 2px solid var(--color-secondary);
+  padding: 0;
+  margin: 0;
 }
 
 .cart-item h2 {
@@ -21,7 +21,7 @@
 
 .price {
   font-weight: bold;
-  color: #8a2b06;
+  color: var(--color-secondary);
 }
 
 .amount {
@@ -47,8 +47,8 @@
   font: inherit;
   font-weight: bold;
   font-size: 1.25rem;
-  color: #8a2b06;
-  border: 1px solid #8a2b06;
+  color: var(--color-secondary);
+  border: 1px solid var(--color-secondary);
   width: 3rem;
   text-align: center;
   border-radius: 6px;
@@ -60,7 +60,7 @@
 
 .cart-item button:hover,
 .cart-item button:active {
-  background-color: #8a2b06;
+  background-color: var(--color-secondary);
   color: white;
 }
 
