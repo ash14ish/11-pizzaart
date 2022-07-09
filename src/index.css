@@ -6,6 +6,7 @@
   --color-secondary-dark: #002a48;
   --color-veg: #02ad2a;
   --color-non-veg: #e32716;
+  --bump-animation: bump 1500ms 10 linear;
 }
 
 * {
@@ -20,4 +21,26 @@ html {
 body {
   margin: 8rem auto;
   background-color: #cecece;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+
+  10% {
+    transform: scale(0.6);
+  }
+
+  30% {
+    transform: scale(1.6);
+  }
+
+  50% {
+    transform: scale(2.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }

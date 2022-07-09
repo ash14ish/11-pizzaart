@@ -9,6 +9,7 @@ import CartItem from "./CartItem";
 import Checkout from "./Checkout";
 import LoadingSpinner from "../UI/LoadingSpinner";
 import { BsCartXFill, BsBagCheck } from "react-icons/bs";
+import { GiFullPizza } from "react-icons/gi";
 
 const Cart = props => {
   const [isCheckout, setIsCheckout] = useState(false);
@@ -129,7 +130,7 @@ const Cart = props => {
 
   const isSubmittingLoader = (
     <>
-      <LoadingSpinner />
+      <GiFullPizza className={classes["submit-spinner"]} />
       <p className={classes.message}>Confirming Order</p>
     </>
   );

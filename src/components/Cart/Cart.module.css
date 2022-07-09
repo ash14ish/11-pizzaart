@@ -89,3 +89,13 @@
   margin: auto;
   margin-bottom: 1rem;
 }
+
+.submit-spinner {
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 3rem auto;
+  border-radius: 50%;
+  animation: var(--bump-animation);
+  color: #0066a7;
+}

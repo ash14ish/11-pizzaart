@@ -5,7 +5,7 @@
   border-radius: 50%;
   top: 30vh;
   left: calc(45% - 2rem);
-  animation: bump 3s 40 linear;
+  animation: var(--bump-animation);
   color: #0066a7;
 }
 
