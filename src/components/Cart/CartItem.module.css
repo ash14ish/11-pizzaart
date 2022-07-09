@@ -43,6 +43,7 @@
   color: rgb(98, 98, 98);
   font-weight: bold;
   font-size: 0.9rem;
+  padding-right: 0.7rem;
 }
 
 .amount {
@@ -103,7 +104,7 @@
 
 @media (max-width: 600px) {
   .actions-container {
-    grid-template-columns: 1fr 2.3fr 1fr;
+    grid-template-columns: 1fr 2.8fr 1fr;
   }
 
   .item-amount {
