@@ -7,7 +7,6 @@ import { cartActions } from "../../redux/cartSlice";
 import Modal from "../UI/Modal";
 import CartItem from "./CartItem";
 import Checkout from "./Checkout";
-import LoadingSpinner from "../UI/LoadingSpinner";
 import { BsCartXFill, BsBagCheck } from "react-icons/bs";
 import { GiFullPizza } from "react-icons/gi";
 

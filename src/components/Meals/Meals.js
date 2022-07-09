@@ -1,8 +1,9 @@
 import React, { Suspense } from "react";
 import { useSelector } from "react-redux";
+import classes from "./Meals.module.css";
 
 import Error from "../UI/Error";
-import LoadingSpinner from "../UI/LoadingSpinner";
+import { GiFullPizza } from "react-icons/gi";
 
 import { Routes, Route, Navigate } from "react-router-dom";
 
@@ -25,7 +26,13 @@ const Meals = () => {
   const mealfor4 = meals.filter(item => item.type === "meal-for-4");
 
   return (
-    <Suspense fallback={<LoadingSpinner />}>
+    <Suspense
+      fallback={
+        <>
+          <GiFullPizza className={classes["spinner"]} />
+        </>
+      }
+    >
       <Routes>
         <Route path="/" element={<Navigate to="bestsellers" />} />
 

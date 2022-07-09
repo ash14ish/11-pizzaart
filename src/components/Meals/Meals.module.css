@@ -1,0 +1,9 @@
+.spinner {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  margin: 13rem auto;
+  animation: var(--bump-animation);
+  color: #0066a7;
+}
